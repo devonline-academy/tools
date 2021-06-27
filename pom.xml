@@ -19,7 +19,9 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>academy.devonline</groupId>
     <artifactId>tools</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <name>tools</name>
     <url>http://devonline.academy</url>
     <developers>
@@ -39,6 +41,11 @@
         <developerConnection>scm:git:ssh://github.com:devonline-academy/tools.git</developerConnection>
         <url>http://github.com/devonline-academy/tools/tree/master</url>
     </scm>
+
+    <modules>
+        <module>git</module>
+    </modules>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>11</maven.compiler.release>
