@@ -13,8 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# --------------------------------------------------------- Read more ----------------------------------------------------------------------
+# ----------------------------------------------------- Read more ------------------------------------------------------
 # https://git-scm.com/docs/gitattributes
-# --------------------------------------------------------- End of line normalization ------------------------------------------------------
+# ---------------------------------------------- End of line normalization ---------------------------------------------
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
