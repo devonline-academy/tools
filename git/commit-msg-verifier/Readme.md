@@ -1,5 +1,66 @@
 # Commit message hook
 
+## Setup instructions
+
+### For Windows:
+
+1. Install `wget` tool for Windows:
+
+*For example from here: https://eternallybored.org/misc/wget/*
+
+2. Go to git local repository:
+
+```cmd
+cd path\to\the\local\git\repository
+```
+
+3. Setup commit-msg hook using `wget` tool:
+
+```cmd
+wget -O %TMP%\setup.cmd -q https://raw.githubusercontent.com/devonline-academy/tools/master/git/commit-msg-verifier/setup-win.cmd ^
+     && %TMP%\setup.cmd -q ^
+     && del /f /q %TMP%\setup.cmd
+```
+
+### For MacOS
+
+1. Go to git local repository
+
+```bash
+cd path/to/the/local/git/repository
+```
+
+2. Setup commit-msg hook using `curl` tool
+
+*(FYI: If `curl` tool is not available on your computer, please install this tool manually before using the following setup instructions)*
+
+```bash
+curl -o /tmp/setup -s https://raw.githubusercontent.com/devonline-academy/tools/master/git/commit-msg-verifier/setup-mac.sh \
+    && chmod 755 /tmp/setup \
+    && /tmp/setup -q \
+    && rm -rf /tmp/setup
+```
+
+### For Linux
+
+1. Go to git local repository
+
+```bash
+cd path/to/the/local/git/repository
+```
+
+2. Setup commit-msg hook using `wget` tool
+
+*(FYI: If `wget` tool is not available on your computer, please install this tool manually before using the following setup instructions)*
+
+```bash
+wget -O /tmp/setup -q https://raw.githubusercontent.com/devonline-academy/tools/master/git/commit-msg-verifier/setup-lin.sh \
+    && chmod 755 /tmp/setup \
+    && /tmp/setup -q \
+    && rm -rf /tmp/setup
+```
+   
+
 ## The seven rules of a great Git commit message
 
 1. Separate subject from body with a blank line!
