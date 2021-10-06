@@ -2,6 +2,11 @@
 
 ## Setup instructions
 
+### Requirements
+
+1. Commit message hook requires [JDK 11 LTS](https://openjdk.java.net/projects/jdk/11/) or higher.
+2. `PATH` environment variable must contain a path to the `$JAVA_HOME/bin` folder.
+
 ### For Windows:
 
 1. Install `wget` tool for Windows:
